@@ -1,0 +1,13 @@
+*/*/dist
+*/*/lib
+*/*/node_modules
+*/*/scripts
+*/*/.DS_Store
+*/*/storybook-dist
+*/*/Dockerfile
+*/*/README.md
+*/*/cypress
+*/*/tests
+.dockerignore
+.gitignore
+.github
