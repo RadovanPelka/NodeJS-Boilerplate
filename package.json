@@ -10,10 +10,10 @@
     "build:assets": "echo build:assets",
     "build:clean": "rimraf dist",
     "build:compile": "ttsc -p tsconfig.json",
-    "build:start": "ts-node dist/server.js",
+    "build:start": "node dist/server.js",
     "clean:modules": "rimraf node_modules",
     "lint": "eslint --ext .ts .",
-    "lint:fix": "yarn test:lint --fix"
+    "lint:fix": "yarn lint --fix"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -55,7 +55,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test:lint"
+      "pre-commit": "yarn lint"
     }
   }
 }
