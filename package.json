@@ -1,16 +1,17 @@
 {
   "name": "nodejs-boilerplate",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
+    "start": "node dist/server.js",
     "dev": "nodemon",
     "start:dev": "node -r dotenv/config -r tsconfig-paths/register -r ts-node/register ./index.ts",
     "build": "yarn build:clean && yarn build:compile && yarn build:assets",
     "build:assets": "echo build:assets",
     "build:clean": "rimraf dist",
     "build:compile": "ttsc -p tsconfig.json",
-    "build:start": "node dist/server.js",
+    "build:docker": "docker-compose up",
     "clean:modules": "rimraf node_modules",
     "lint": "eslint --ext .ts .",
     "lint:fix": "yarn lint --fix"
