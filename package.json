@@ -16,9 +16,6 @@
     "lint": "eslint --ext .ts .",
     "lint:fix": "yarn lint --fix"
   },
-  "engines": {
-    "node": ">=12.0.0"
-  },
   "author": "Radovan Pelka (Rado) <pelka.radovan@gmail.com>",
   "description": "Clean Architecture inspired boilerplate for NodeJS (Eslint, Typescript, Husky, Prettier)",
   "devDependencies": {
